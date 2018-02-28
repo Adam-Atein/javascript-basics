@@ -10,5 +10,20 @@
       <img src="images/image3.jpg" id="image3" />
       <img src="images/image4.jpg" id="image4" />
       <img src="images/image5.jpg" id="image5" />
+      <script>
+          for (let i = 1; i <= 5; i++) {
+            let image = document.querySelector("#image" + i);
+            image.addEventListener('mouseover', function () {
+              image.src = "images/image" + i + ".jpg"
+            });
+          }
+          for (let i = 1; i <= 5; i++) {
+            let image = document.querySelector("#image" + i);
+            image.addEventListener('mouseout', function () {
+              image.src = "images/image" + i + "_2.jpg"
+            });
+          }
+                  //Adam
+        </script>
   </body>
 </html>

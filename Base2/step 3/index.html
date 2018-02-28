@@ -7,6 +7,17 @@
 <body>
   <form>
     <label for="name">Your name  : </label><input type="text" name="name" value="" id="name"/>
+
   </form>
+ 
+  <script>
+      document.write('<div id="div"></div>');
+      const div = document.getElementById("div");
+      const name = document.getElementById('name');
+      name.addEventListener('change', function () {
+      div.innerHTML = name.value;
+      });
+              //Adam
+    </script>
 </body>
 </html>

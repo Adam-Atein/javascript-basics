@@ -11,5 +11,23 @@
     <label for="city">Your city  : </label><input type="text" name="city" value="New York" id="city" />
     <button type="button" name="button">Reset</button>
   </form>
+  <script>
+      //consts
+	const name = document.getElementById('name')
+	const surname = document.getElementById('surname')
+	const city = document.getElementById('city')
+	const button = document.querySelector('button')
+
+	button.addEventListener('click',function () {
+		 
+    if (confirm("Are you sure?")) {
+        name.value = ""
+        surname.value = ""
+        city.value = ""
+    }
+
+  })
+          //Adam
+  </script>
 </body>
 </html>

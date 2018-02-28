@@ -9,5 +9,22 @@
             <label for="age">your age : </label><input type="text" id="age" name="age"/><br/>
             <button id="validate" name="validate">validate</button>
         </form>
+        <script>
+
+            const age = document.getElementById("age");
+            const validate = document.getElementById("validate");
+
+
+            validate.addEventListener('click', function () {
+               if(age.value > 18){
+                   document.write("U R > 18");
+               }else if(parseInt(age.value) === 18){
+                   document.write("U R 18");
+               }else {
+                   document.write("U R < 18");
+               }
+            });
+            //Adam
+        </script>
     </body>
 </html>
